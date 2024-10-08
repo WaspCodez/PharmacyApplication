@@ -5,7 +5,7 @@ namespace PharmacyApplication.ClientDetails
 {
     public class ClientInformation
     {
-        [JsonIgnore]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public int? id { get; set; }
         public string name { get; set; }
         public string surname { get; set; }
