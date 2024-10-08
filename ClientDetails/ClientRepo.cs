@@ -15,12 +15,12 @@ namespace PharmacyApplication.ClientDetails
         {
             var param = new
             {
-                p_name = clientInformation.name,
-                p_surname = clientInformation.surname,
-                p_id_number = clientInformation.id_number,
-                p_medical_aid_number = clientInformation.medical_aid_number,
-                p_address = clientInformation.address,
-                p_cell_number = clientInformation.cell_number
+                @name = clientInformation.name,
+                @surname = clientInformation.surname,
+                @id_number = clientInformation.id_number,
+                @medical_aid_number = clientInformation.medical_aid_number,
+                @address = clientInformation.address,
+                @cell_number = clientInformation.cell_number
             };
 
             await _dapper.ExecuteAsync("dbo.add_client_details", param);
