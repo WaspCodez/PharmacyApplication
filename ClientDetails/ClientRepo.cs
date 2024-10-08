@@ -17,7 +17,7 @@ namespace PharmacyApplication.ClientDetails
             {
                 @name = clientInformation.name,
                 @surname = clientInformation.surname,
-                @id_number = clientInformation.id_number,
+                @identity_number = clientInformation.identity_number,
                 @medical_aid_number = clientInformation.medical_aid_number,
                 @address = clientInformation.address,
                 @cell_number = clientInformation.cell_number
